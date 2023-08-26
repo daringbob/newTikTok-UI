@@ -1,7 +1,5 @@
 @import 'normalize.css';
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +9,10 @@
 :root {
   --primary: #fe2c55;
   --black: #000;
-  --text-color: #333
+  --text-color: #333;
+  
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
 }
 
 html {
