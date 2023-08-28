@@ -102,6 +102,7 @@
 .actions {
     display: flex;
     align-items: center;
+    
 }
 
 .more-btn {
@@ -113,11 +114,30 @@
 }
 
 .action-btn {
+    position: relative;
+    display: flex;
     font-size: 2.2rem;
     color: #161823;
     background-color: transparent;
-    padding: 4px 12px;
+    padding: 4px 10px;
     cursor: pointer;
+    display: flex;
+    align-content: center;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    padding: 0px 6px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'ProximaNova', sans-serif;
+    background-color: var(--primary);
 }
 
 .user-avatar {
@@ -125,6 +145,6 @@
     height: 32px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 12px;
+    margin-left: 14px;
     cursor: pointer;
 }
