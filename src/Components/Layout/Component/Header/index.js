@@ -28,6 +28,8 @@ import {
 } from "src/Components/Icon";
 import Image from "src/Components/Image";
 import Search from "./Search";
+import { Link } from "react-router-dom";
+import routes from "src/Components/config/routes";
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -68,7 +70,7 @@ const handleMenuChange = (item) => {
 };
 
 function Header() {
-  
+
 
   const userMenu = [
     {
@@ -99,7 +101,9 @@ function Header() {
   return (
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
-        <img src={images.logo} className={cx("logo")} alt="" />
+        <Link to={routes.home}>
+          <img src={images.logo} className={cx("logo")} alt="" />
+        </Link>
 
         {/* Search */}
         <Search />

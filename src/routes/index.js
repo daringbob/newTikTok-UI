@@ -4,28 +4,29 @@ import ProfilePage from "src/pages/Profile"
 import UploadPage from "src/pages/Upload"
 import { HeadOnlyLayout } from "src/Components/Layout"
 import SearchPage from "src/pages/Search"
+import routes from "src/Components/config/routes"
 
 const publicRoutes = [
     {
-        path : "/",
+        path : routes.home,
         component : HomePage
     },
     {
-        path : "/following",
+        path : routes.following,
         component : FollowingPage
     },
     {
-        path : "/upload",
+        path : routes.upload,
         component : UploadPage,
         layout : HeadOnlyLayout
     },
     {
-        path : "/search",
+        path : routes.search,
         component : SearchPage,
         layout : null
     },
     {
-        path : '/:nickname',
+        path : routes.profile,
         component : ProfilePage
     }
 ]
