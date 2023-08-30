@@ -2,7 +2,7 @@ import HomePage from "src/pages/Home"
 import FollowingPage from "src/pages/Following"
 import ProfilePage from "src/pages/Profile"
 import UploadPage from "src/pages/Upload"
-import { HeadOnlyLayout } from "src/Components/Layout"
+import { HeadOnlyLayout } from "src/layouts"
 import SearchPage from "src/pages/Search"
 import routes from "src/Components/config/routes"
 

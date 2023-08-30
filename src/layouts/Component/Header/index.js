@@ -29,7 +29,7 @@ import {
 import Image from "src/Components/Image";
 import Search from "./Search";
 import { Link } from "react-router-dom";
-import routes from "src/Components/config/routes";
+import config from "src/Components/config/";
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -180,7 +180,7 @@ function Header() {
   return (
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
-        <Link to={routes.home}>
+        <Link to={config.routes.home}>
           <img src={images.logo} className={cx("logo")} alt="" />
         </Link>
 
