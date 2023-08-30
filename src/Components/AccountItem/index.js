@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from "react";
 import classNames from "classnames/bind";
 
@@ -24,6 +25,10 @@ function AccountItem({ data }) {
       </div>
     </Link>
   );
+}
+
+AccountItem.propTypes = {
+  data: PropTypes.object.isRequired,
 }
 
 export default AccountItem;
