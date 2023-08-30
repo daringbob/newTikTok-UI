@@ -4,29 +4,34 @@ import ProfilePage from "src/pages/Profile"
 import UploadPage from "src/pages/Upload"
 import { HeadOnlyLayout } from "src/layouts"
 import SearchPage from "src/pages/Search"
-import routes from "src/Components/config/routes"
+import config from "src/Components/config"
+
+import LivePage from "src/pages/Live"
 
 const publicRoutes = [
     {
-        path : routes.home,
+        path : config.routes.home,
         component : HomePage
     },
     {
-        path : routes.following,
+        path : config.routes.following,
         component : FollowingPage
     },
     {
-        path : routes.upload,
+        path : config.routes.upload,
         component : UploadPage,
         layout : HeadOnlyLayout
     },
     {
-        path : routes.search,
-        component : SearchPage,
-        layout : null
+        path : config.routes.live,
+        component : LivePage
     },
     {
-        path : routes.profile,
+        path : config.routes.search,
+        component : SearchPage
+    },
+    {
+        path : config.routes.profile,
         component : ProfilePage
     }
 ]
